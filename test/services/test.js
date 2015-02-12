@@ -11,7 +11,7 @@ exports.test_interceptor = function(req, res) {
 };
 
 exports.test = function(req, res) {
-    bigrest.test(req.param("key"), function(err, text) {
+    brmethods.test(req.param("key"), function(err, text) {
         res.send({"result": text});
     });
 };
