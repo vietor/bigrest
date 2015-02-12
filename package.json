@@ -1,0 +1,11 @@
+{
+    "name": "bigrest",
+    "description": "Simple restful framework for NodeJS",
+    "version": "0.0.1",
+    "private": false,
+    "dependencies": {
+        "express": "~4.10.4",
+        "body-parser": "~1.11.0",
+        "connect-multiparty": "~1.2.5"
+    }
+}

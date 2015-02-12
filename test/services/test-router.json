@@ -1,0 +1,20 @@
+{
+    "broken_processor": "test_broken_processor",
+    "groups": [
+        {
+            "interceptor": "test_interceptor",
+            "processors": [{
+                "url" : "/test",
+                "method" : "GET",
+                "processor": "test",
+                "parameters" : [{
+                    "name" : "key"
+                }],
+                "workdata": {
+                },
+                "workparam": {
+                }
+            }]
+        }
+    ]
+}
