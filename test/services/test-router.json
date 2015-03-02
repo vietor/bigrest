@@ -1,5 +1,5 @@
 {
-    "broken_processor": "test_broken_processor",
+    "broken_interceptor": "test_broken_processor",
     "groups": [
         {
             "interceptor": "test_interceptor",
