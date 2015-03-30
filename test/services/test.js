@@ -1,4 +1,4 @@
-exports.test_broken_processor = function(req, res, name) {
+exports.test_failure = function(req, res, name) {
     if(name) {
         res.send("Nout found paramator: " + name);
     }
