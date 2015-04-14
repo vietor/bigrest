@@ -8,7 +8,27 @@
                 "method" : "GET",
                 "processor": "test",
                 "parameters" : [{
-                    "name" : "key"
+                    "name" : "key",
+                    "length_min": 2,
+                    "digit": true,
+                    "values": [33, 22]
+                }],
+                "workdata": {
+                },
+                "workparam": {
+                }
+            }]
+        },
+        {
+            "interceptor": "test_interceptor",
+            "processors": [{
+                "url" : "/test2",
+                "method" : "GET",
+                "processor": "test",
+                "parameters" : [{
+                    "name" : "key",
+                    "length_max": 3,
+                    "word": true
                 }],
                 "workdata": {
                 },

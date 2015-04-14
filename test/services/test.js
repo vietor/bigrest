@@ -1,6 +1,6 @@
-exports.test_failure = function(req, res, name) {
+exports.test_failure = function(req, res, name, type) {
     if(name) {
-        res.send("Nout found paramator: " + name);
+        res.send("Nout found paramator: " + name + ", type: " + type);
     }
 };
 
