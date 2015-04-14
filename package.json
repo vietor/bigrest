@@ -19,6 +19,7 @@
         "email": "vietor.liu (at) gmail.com",
         "url": "https://github.com/vietor"
     },
+    "license": "MIT",
     "main": "index.js",
     "engines": {
         "node": "*"
