@@ -18,8 +18,7 @@
                 "workparam": {
                 }
             }]
-        },
-        {
+        },{
             "interceptor": "test_interceptor",
             "processors": [{
                 "url" : "/test2",
@@ -29,6 +28,21 @@
                     "name" : "key",
                     "length_max": 3,
                     "word": true
+                }],
+                "workdata": {
+                },
+                "workparam": {
+                }
+            }]
+        },{
+            "interceptor": "test_interceptor",
+            "processors": [{
+                "url" : "/test3",
+                "method" : "GET",
+                "processor": "test",
+                "parameters" : [{
+                    "name" : "key",
+                    "regexp": "^\\w+$"
                 }],
                 "workdata": {
                 },
