@@ -22,7 +22,7 @@
             "interceptor": "test_interceptor",
             "processors": [{
                 "url" : "/test2",
-                "method" : "GET",
+                "method" : "POST",
                 "processor": "test",
                 "parameters" : [{
                     "name" : "key",
