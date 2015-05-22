@@ -1,0 +1,8 @@
+{
+    "maxerr": 50,
+    "predef": [
+    ],
+    "node": true,
+    "strict": true,
+    "laxbreak": true
+}
