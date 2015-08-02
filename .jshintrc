@@ -4,6 +4,6 @@
     ],
     "node": true,
     "strict": true,
-    "eqnull": false,
+    "eqnull": true,
     "laxbreak": true
 }
