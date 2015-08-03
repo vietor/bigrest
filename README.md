@@ -17,4 +17,11 @@ $ npm install bigrest
 var bigrest = require('bigrest')
 ```
 
-Comming soon ...
+## License
+
+[MIT](LICENSE)
+
+[npm-image]: https://img.shields.io/npm/v/bigrest.svg
+[npm-url]: https://npmjs.org/package/bigrest
+[downloads-image]: https://img.shields.io/npm/dm/bigrest.svg
+[downloads-url]: https://npmjs.org/package/bigrest
