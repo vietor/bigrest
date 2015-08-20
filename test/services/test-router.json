@@ -4,13 +4,24 @@
         {
             "interceptor": "test_interceptor",
             "processors": [{
-                "url" : "/test",
+                "url" : "/test/digit",
                 "method" : "GET",
                 "processor": "test",
                 "parameters" : [{
                     "name" : "key",
                     "length_min": 2,
-                    "digit": true,
+                    "digit": true
+                }],
+                "workdata": {
+                },
+                "workparam": {
+                }
+            },{
+                "url" : "/test/values",
+                "method" : "GET",
+                "processor": "test",
+                "parameters" : [{
+                    "name" : "key",
                     "values": [33, 22]
                 }],
                 "workdata": {
@@ -21,7 +32,7 @@
         },{
             "interceptor": "test_interceptor",
             "processors": [{
-                "url" : "/test2",
+                "url" : "/test/word",
                 "method" : "POST",
                 "processor": "test",
                 "parameters" : [{
@@ -37,12 +48,27 @@
         },{
             "interceptor": "test_interceptor",
             "processors": [{
-                "url" : "/test3",
+                "url" : "/test/regexp",
                 "method" : "GET",
                 "processor": "test",
                 "parameters" : [{
                     "name" : "key",
                     "regexp": "^\\w+$"
+                }],
+                "workdata": {
+                },
+                "workparam": {
+                }
+            }]
+        },{
+            "interceptor": "test_interceptor",
+            "processors": [{
+                "url" : "/test/range",
+                "method" : "GET",
+                "processor": "test",
+                "parameters" : [{
+                    "name" : "key",
+                    "range": [1, 12]
                 }],
                 "workdata": {
                 },
