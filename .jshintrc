@@ -3,6 +3,7 @@
     "predef": [
     ],
     "node": true,
+    "mocha": true,
     "strict": true,
     "eqnull": true,
     "laxbreak": true

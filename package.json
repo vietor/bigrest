@@ -24,17 +24,20 @@
     "engines": {
         "node": ">= 0.10.0"
     },
-    "files": {
+    "files": [
         "LICENSE",
         "README.md",
         "index.js",
         "lib/"
-    },
+    ],
     "dependencies": {
         "body-parser": "~1.13.3",
         "connect-multiparty": "~2.0.0",
         "cookie-parser": "~1.3.5",
         "express": "~4.13.3",
         "express-session": "~1.11.3"
+    },
+    "devDependencies": {
+        "mocha": "^2.2.5"
     }
 }

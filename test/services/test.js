@@ -1,7 +1,7 @@
+'use strict';
+
 exports.test_failure = function(req, res, name, type) {
-    if(name) {
-        res.send("Nout found paramator: " + name + ", type: " + type);
-    }
+    res.status(400).send(type);
 };
 
 exports.test_interceptor = function(req, res) {

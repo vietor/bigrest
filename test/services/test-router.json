@@ -4,12 +4,24 @@
         {
             "interceptor": "test_interceptor",
             "processors": [{
+                "url" : "/test/length",
+                "method" : "GET",
+                "processor": "test",
+                "parameters" : [{
+                    "name" : "key",
+                    "length_min": 3,
+                    "length_max": 5
+                }],
+                "workdata": {
+                },
+                "workparam": {
+                }
+            },{
                 "url" : "/test/digit",
                 "method" : "GET",
                 "processor": "test",
                 "parameters" : [{
                     "name" : "key",
-                    "length_min": 2,
                     "digit": true
                 }],
                 "workdata": {
@@ -37,7 +49,6 @@
                 "processor": "test",
                 "parameters" : [{
                     "name" : "key",
-                    "length_max": 3,
                     "word": true
                 }],
                 "workdata": {
