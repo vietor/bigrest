@@ -3,7 +3,7 @@
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
 
-Node.js Simple restful framework.
+Node.js smart restful framework.
 
 ## Installation
 

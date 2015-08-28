@@ -1,6 +1,6 @@
 {
     "name": "bigrest",
-    "description": "Simple restful framework for NodeJS",
+    "description": "Smart restful framework for NodeJS",
     "version": "1.3.0",
     "keywords": [
         "rest",
