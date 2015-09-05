@@ -36,7 +36,7 @@ var bigrest = require('bigrest')
 The options for bigrest framework.
 
 |*Key*|*Type*|*Default*|*Description*|
-|--|--|--|--|
+|---|---|---|---|
 |debug|boolean|false|debug mode switch|
 |https|boolean|false|use HTTPS protocol|
 |basepath|string|process.cwd()|the base path|
@@ -44,9 +44,9 @@ The options for bigrest framework.
 |rootwork|function|undefined|the '/' for all METHOD handler|
 |viewer|object(viewer)|undeifned|set html template engine|
 
-#### viewer struction
+#### object(viewer)
 |*Key*|*Type*|*Description*|
-|--|--|--|--|
+|---|---|---|---|
 |filepath|string|the template source file path|
 |render|string or function|the template engine|
 
