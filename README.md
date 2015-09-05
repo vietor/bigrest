@@ -64,7 +64,7 @@ The options for bigrest framework.
 |*Key*|*Type*|*Default*|*Description*|
 |---|---|---|---|
 |urlpath|string|undefined|the url path|
-|filepath|stringundefined||the static file's file path|
+|filepath|string|undefined|the static file's file path|
 
 ```javascript
 {
