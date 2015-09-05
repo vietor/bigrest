@@ -17,6 +17,43 @@ $ npm install bigrest
 var bigrest = require('bigrest')
 ```
 
+### Directory tree
+
+```sh
+|--{basepath}
+|   |--commons
+|   |   |--test.js
+|   |--methods
+|   |   |--test.js
+|   |--services
+|   |   |--test-router.json
+|   |   |--test.js
+|--app.js
+```
+
+### Parameter: opts
+
+The options for bigrest framework.
+
+|*Key*|*Type*|*Default*|*Description*|
+|--|--|--|--|
+|debug|boolean|false|debug mode switch|
+|https|boolean|false|use HTTPS protocol|
+|basepath|string|process.cwd()|the base path|
+|services|[string]|services|the handelers and routers path|
+|rootwork|function|undefined|the '/' for all METHOD handler|
+|viewer|object(viewer)|undeifned|set html template engine|
+
+#### viewer struction
+|*Key*|*Type*|*Description*|
+|--|--|--|--|
+|filepath|string|the template source file path|
+|render|string or function|the template engine|
+
+### listen(port, opts)
+
+Binds and listens for connections on the port.
+
 ## License
 
 [MIT](LICENSE)
