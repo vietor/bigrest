@@ -42,13 +42,21 @@ The options for bigrest framework.
 |basepath|string|process.cwd()|the base path|
 |services|[string]|services|the handelers and routers path|
 |rootwork|function|undefined|the '/' for all METHOD handler|
+|visitor|function|undefiend|the pre processor the all handler|
 |viewer|object(viewer)|undeifned|set html template engine|
+|static|object(static)|undefiend|set static file engine|
 
 #### object(viewer)
 |*Key*|*Type*|*Description*|
 |---|---|---|---|
 |filepath|string|the template source file path|
 |render|string or function|the template engine|
+
+#### object(static)
+|*Key*|*Type*|*Description*|
+|---|---|---|---|
+|urlpath|string|the url path|
+|filepath|string|the static file's file path|
 
 ### listen(port, opts)
 
