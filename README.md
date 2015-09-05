@@ -48,10 +48,10 @@ The options for bigrest framework.
 |session|object(session)|undefined|set session engine|
 
 #### object(viewer)
-|*Key*|*Type*|*Description*|
+|*Key*|*Type*|*Default*|*Description*|
 |---|---|---|---|
-|filepath|string|the template source file path|
-|render|string or function|the template engine|
+|filepath|string|undefined|the template source file path|
+|render|string or function|undefiend|the template engine|
 
 ```javascript
 {
@@ -61,10 +61,10 @@ The options for bigrest framework.
 ```
 
 #### object(static)
-|*Key*|*Type*|*Description*|
+|*Key*|*Type*|*Default*|*Description*|
 |---|---|---|---|
-|urlpath|string|the url path|
-|filepath|string|the static file's file path|
+|urlpath|string|undefined|the url path|
+|filepath|stringundefined||the static file's file path|
 
 ```javascript
 {
@@ -75,13 +75,13 @@ The options for bigrest framework.
 ```
 
 #### object(session)
-|*Key*|*Type*|*Description*|
+|*Key*|*Type*|*Default*|*Description*|
 |---|---|---|---|
-|name|string|the cookie name|
-|secret|string|the cookie secret key|
-|resave|boolean|save session event if not modified|
-|saveUninitialized|boolean|save session event it not initialized|
-|store|function|the default session handler|
+|name|string|undefined|the cookie name|
+|secret|string|undefined|the cookie secret key|
+|resave|boolean|true|save session event if not modified|
+|saveUninitialized|boolean|true|save session event it not initialized|
+|store|function|undefined|the default session handler|
 
 ```javascript
 {
