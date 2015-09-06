@@ -40,12 +40,13 @@ The options for bigrest framework.
 |debug|boolean|false|debug mode switch|
 |https|boolean|false|use HTTPS protocol|
 |basepath|string|process.cwd()|the base path|
-|services|[string]|services|the handelers and routers path|
+|services|array(string)|services|the handelers and routers path|
 |rootwork|function|undefined|the '/' for all METHOD handler|
 |visitor|function|undefiend|the pre processor the all handler|
 |viewer|object(viewer)|undeifned|set html template engine|
 |static|object(static)|undefiend|set static file engine|
 |session|object(session)|undefined|set session engine|
+|middlewares|array(function)|[]|the middlewares for express|
 
 #### object(viewer)
 |*Key*|*Type*|*Default*|*Description*|
@@ -83,7 +84,7 @@ The options for bigrest framework.
 |name|string|SESSIONID|the cookie name|
 |resave|boolean|false|save session event if not modified|
 |saveUninitialized|boolean|false|save session event it not initialized|
-|store|function|undefined|the default session processor|
+|store|function|undefined|the default session engine|
 
 ```javascript
 {
