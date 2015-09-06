@@ -75,18 +75,19 @@ The options for bigrest framework.
 ```
 
 #### object(session)
+
+> it wrapped the [express-session](https://github.com/expressjs/session)
+
 |*Key*|*Type*|*Default*|*Description*|
 |---|---|---|---|
-|name|string|undefined|the cookie name|
-|secret|string|undefined|the cookie secret key|
-|resave|boolean|true|save session event if not modified|
-|saveUninitialized|boolean|true|save session event it not initialized|
-|store|function|undefined|the default session handler|
+|name|string|SESSIONID|the cookie name|
+|resave|boolean|false|save session event if not modified|
+|saveUninitialized|boolean|false|save session event it not initialized|
+|store|function|undefined|the default session processor|
 
 ```javascript
 {
     name: 'SESSIONID',
-    secret: 'vxforum',
     resave: false,
     saveUninitialized: false,
     store: function(session) {
