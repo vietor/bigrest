@@ -1,3 +1,10 @@
+1.3.2
+========
+
+  * Upgrade upstream
+  * Throw exception when simulator
+
+
 1.3.1
 ========
 
