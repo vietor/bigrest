@@ -1,5 +1,7 @@
 'use strict';
 
 exports.test = function(key, callback) {
-    callback(null, "key is: " + key);
+    brcommons.upperKey(key, function(ukey) {
+        callback(null, brcommons.PREFIX + " is: " + ukey);
+    });
 };

@@ -9,7 +9,7 @@ var http = bigrest.simulator({
 });
 
 
-describe('bigrest', function() {
+describe('parameter', function() {
 
     describe('length', function() {
         it('should successed when key eq contain set', function(done) {

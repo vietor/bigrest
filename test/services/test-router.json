@@ -1,12 +1,12 @@
 {
     "failure": "test_failure",
+    "interceptor": "test_interceptor",
     "groups": [
         {
-            "interceptor": "test_interceptor",
             "processors": [{
                 "url" : "/test/length",
                 "method" : "GET",
-                "processor": "test",
+                "processor": "test_parameter",
                 "parameters" : [{
                     "name" : "key",
                     "length_min": 3,
@@ -19,7 +19,7 @@
             },{
                 "url" : "/test/digit",
                 "method" : "GET",
-                "processor": "test",
+                "processor": "test_parameter",
                 "parameters" : [{
                     "name" : "key",
                     "digit": true
@@ -31,7 +31,7 @@
             },{
                 "url" : "/test/values",
                 "method" : "GET",
-                "processor": "test",
+                "processor": "test_parameter",
                 "parameters" : [{
                     "name" : "key",
                     "values": [33, 22]
@@ -46,7 +46,7 @@
             "processors": [{
                 "url" : "/test/word",
                 "method" : "POST",
-                "processor": "test",
+                "processor": "test_parameter",
                 "parameters" : [{
                     "name" : "key",
                     "word": true
@@ -61,7 +61,7 @@
             "processors": [{
                 "url" : "/test/regexp",
                 "method" : "GET",
-                "processor": "test",
+                "processor": "test_parameter",
                 "parameters" : [{
                     "name" : "key",
                     "regexp": "^\\w+$"
@@ -76,7 +76,7 @@
             "processors": [{
                 "url" : "/test/range",
                 "method" : "GET",
-                "processor": "test",
+                "processor": "test_parameter",
                 "parameters" : [{
                     "name" : "key",
                     "range": [1, 12]
