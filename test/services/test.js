@@ -12,6 +12,8 @@ exports.test_interceptor = function(req, res) {
 
 exports.test = function(req, res) {
     brmethods.test(req.param("key"), function(err, text) {
-        res.send({"result": text});
+        res.send({
+            "result": text
+        });
     });
 };
