@@ -1,3 +1,9 @@
+1.3.3
+========
+
+  * Performance and clean code
+  * deps: body-parser@~1.14.2
+
 1.3.2
 ========
 
