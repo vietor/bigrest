@@ -1,3 +1,8 @@
+1.3.4
+========
+
+  * Hotfix for 1.3.3
+
 1.3.3
 ========
 
@@ -9,7 +14,6 @@
 
   * Upgrade upstream
   * Throw exception when simulator
-
 
 1.3.1
 ========
