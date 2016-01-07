@@ -1,3 +1,8 @@
+1.3.5
+========
+
+  * Fix crash when error catch in express
+
 1.3.4
 ========
 
