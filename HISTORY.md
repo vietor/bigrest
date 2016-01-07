@@ -1,3 +1,9 @@
+1.3.6
+========
+
+  * Split template files
+  * Remove multiple error middlewares for express
+
 1.3.5
 ========
 
