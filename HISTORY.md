@@ -1,3 +1,10 @@
+1.3.7
+========
+
+  * Add HTTP-400 as default failure for services
+  * deps: cookie-parser@~1.4.1
+  * deps: express-session@~1.13.0
+
 1.3.6
 ========
 
