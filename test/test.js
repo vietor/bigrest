@@ -135,3 +135,14 @@ describe('parameter', function() {
     });
 
 });
+
+describe('wrong', function() {
+    describe('failure', function() {
+        it('should successed when empty key', function(done) {
+            http.request('GET', '/wrong/failure', {}, function(status, res) {
+                assert.equal(status, 400);
+                done();
+            });
+        });
+    });
+});

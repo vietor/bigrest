@@ -1,0 +1,14 @@
+{
+    "processors": [{
+        "url" : "/wrong/failure",
+        "method" : "GET",
+        "processor": "wrong_processor",
+        "parameters" : [{
+            "name" : "key"
+        }],
+        "workdata": {
+        },
+        "workparam": {
+        }
+    }]
+}
