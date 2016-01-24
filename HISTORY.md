@@ -1,3 +1,8 @@
+1.3.8
+========
+
+  * Add more attribute (failure, match) for router
+
 1.3.7
 ========
 
