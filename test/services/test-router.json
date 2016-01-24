@@ -86,6 +86,24 @@
                 "workparam": {
                 }
             }]
+        },
+        {
+            "interceptor": "test_interceptor",
+            "processors": [{
+                "url" : "/test/match",
+                "method" : "GET",
+                "processor": "test_parameter",
+                "parameters" : [{
+                    "name" : "key"
+                },{
+                    "name" : "key2",
+                    "match": "key"
+                }],
+                "workdata": {
+                },
+                "workparam": {
+                }
+            }]
         }
     ]
 }

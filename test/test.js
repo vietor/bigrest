@@ -134,6 +134,27 @@ describe('parameter', function() {
         });
     });
 
+    describe('match', function() {
+        it('should successed when key match', function(done) {
+            http.request('GET', '/test/match', {
+                key: '1',
+                key2: '1'
+            }, function(status, res) {
+                assert.equal(status, 200);
+                done();
+            });
+        });
+        it('should failed when key not match', function(done) {
+            http.request('GET', '/test/match', {
+                key: '13',
+                key2: '14'
+            }, function(status, res) {
+                assert.equal(status, 400);
+                done();
+            });
+        });
+    });
+
 });
 
 describe('wrong', function() {
@@ -141,6 +162,16 @@ describe('wrong', function() {
         it('should successed when empty key', function(done) {
             http.request('GET', '/wrong/failure', {}, function(status, res) {
                 assert.equal(status, 400);
+                done();
+            });
+        });
+    });
+
+    describe('self-failure', function() {
+        it('should successed when self failure', function(done) {
+            http.request('GET', '/wrong/failure/self', {}, function(status, res) {
+                assert.equal(status, 200);
+                assert.equal(res, "key");
                 done();
             });
         });

@@ -10,5 +10,13 @@
         },
         "workparam": {
         }
+    },{
+        "url" : "/wrong/failure/self",
+        "method" : "GET",
+        "failure": true,
+        "processor": "wrong_processor",
+        "parameters" : [{
+            "name" : "key"
+        }]
     }]
 }
