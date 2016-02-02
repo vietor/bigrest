@@ -44,7 +44,7 @@ The options for bigrest framework.
 |rootwork|function|undefined|the '/' for all METHOD handler|
 |visitor|function|undefiend|the pre processor the all handler|
 |viewer|object(viewer)|undeifned|set html template engine|
-|static|object(static)|undefiend|set static file engine|
+|static|object or array (static)|undefiend|set static file engine|
 |session|object(session)|undefined|set session engine|
 |middlewares|array(function)|[]|the middlewares for express|
 
