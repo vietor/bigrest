@@ -44,6 +44,7 @@ The options for bigrest framework.
 |rootwork|function|undefined|the '/' for all METHOD handler|
 |visitor|function|undefiend|the pre processor the all handler|
 |viewer|object(viewer)|undeifned|set html template engine|
+|limits|object(limits)|undeifned|the limits for request parse|
 |static|object or array (static)|undefiend|set static file engine|
 |session|object(session)|undefined|set session engine|
 |middlewares|array(function)|[]|the middlewares for express|
@@ -58,6 +59,20 @@ The options for bigrest framework.
 {
     render: swig.renderFile,
     filepath: path.join(__dirname, "server", "views")
+}
+```
+
+#### object(limits)
+|*Key*|*Type*|*Default*|*Description*|
+|---|---|---|---|
+|bodySize|number|2mb|the request body size|
+|uploadDir|string|undefiend|the dir for file upload|
+|uploadSize|number|50mb|the maximum size for file upload|
+
+```javascript
+{
+    bodySize: 102400,
+    uploadSize: 1024000
 }
 ```
 
