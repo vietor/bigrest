@@ -1,3 +1,8 @@
+1.3.9
+========
+
+  * Add array support with opts.static
+
 1.3.8
 ========
 
