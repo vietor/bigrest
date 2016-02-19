@@ -1,3 +1,10 @@
+1.3.10
+========
+
+  * Add size limit in opts.limits
+  * deps: express@~4.13.4
+  * deps: body-parser@~1.15.0
+
 1.3.9
 ========
 
