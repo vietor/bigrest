@@ -25,6 +25,13 @@ gulp.task('format-js', function() {
             mode: 'VERIFY_AND_WRITE'
         }))
         .pipe(gulp.dest('./test'));
+
+    gulp.src('./demo/**/*.js')
+        .pipe(prettify({
+            config: '.jsbeautifyrc',
+            mode: 'VERIFY_AND_WRITE'
+        }))
+        .pipe(gulp.dest('./demo'));
 });
 
 gulp.task('test', function() {

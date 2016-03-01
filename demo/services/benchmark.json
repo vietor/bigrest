@@ -1,0 +1,10 @@
+{
+    "processors": [
+        {
+            "url": "/benchmark",
+            "method": "GET",
+            "processor": "benchmark_empty",
+            "parameters": []
+        }
+    ]
+}
