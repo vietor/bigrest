@@ -81,6 +81,9 @@ The options for bigrest framework.
 |---|---|---|---|
 |urlpath|string|undefined|the url path|
 |filepath|string|undefined|the static file's file path|
+|options|object|undefined|the static options|
+
+> *options* means in the [express.static](http://expressjs.com/en/4x/api.html#express.static)
 
 ```javascript
 {
