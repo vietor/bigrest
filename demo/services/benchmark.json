@@ -5,6 +5,45 @@
             "method": "GET",
             "processor": "benchmark_empty",
             "parameters": []
+        },
+        {
+            "url": "/benchmark/values",
+            "method": "GET",
+            "processor": "benchmark_empty",
+            "parameters": [
+                {
+                    "name": "value",
+                    "values": [
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5"
+                    ]
+                }
+            ]
+        },
+        {
+            "url": "/benchmark/digit",
+            "method": "GET",
+            "processor": "benchmark_empty",
+            "parameters": [
+                {
+                    "name": "value",
+                    "digit": true
+                }
+            ]
+        },
+        {
+            "url": "/benchmark/regexp",
+            "method": "GET",
+            "processor": "benchmark_empty",
+            "parameters": [
+                {
+                    "name": "value",
+                    "regexp": "^[0-9a-zA-Z]$"
+                }
+            ]
         }
     ]
 }
