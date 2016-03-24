@@ -1,3 +1,8 @@
+1.3.11
+========
+
+  * Add compression support
+
 1.3.10
 ========
 
