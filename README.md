@@ -39,6 +39,7 @@ The options for bigrest framework.
 |---|---|---|---|
 |debug|boolean|false|debug mode switch|
 |https|boolean|false|use HTTPS protocol|
+|compression|boolean|false|use compression|
 |basepath|string|process.cwd()|the base path|
 |services|array(string)|services|the handelers and routers path|
 |rootwork|function|undefined|the '/' for all METHOD handler|
