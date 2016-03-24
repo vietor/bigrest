@@ -55,6 +55,7 @@ The options for bigrest framework.
 |---|---|---|---|
 |filepath|string|undefined|the template source file path|
 |render|string or function|undefiend|the template engine|
+|cache|boolean|opposite with opts.debug|system cache switch|
 
 ```javascript
 {
