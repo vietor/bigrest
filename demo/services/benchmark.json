@@ -7,6 +7,12 @@
             "parameters": []
         },
         {
+            "url": "/benchmark/bigtext",
+            "method": "GET",
+            "processor": "benchmark_bigtext",
+            "parameters": []
+        },
+        {
             "url": "/benchmark/values",
             "method": "GET",
             "processor": "benchmark_empty",
