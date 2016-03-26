@@ -124,6 +124,55 @@ The options for bigrest framework.
 
 Binds and listens for connections on the port.
 
+### **router json format**
+
+it has three style, Object(container), Array(Group), Object(Group).
+> XArray(stirng) was a Array(String) or a array split edby ",".
+
+#### Object(container)
+|*Key*|*Type*|*Default*|*Description*|
+|---|---|---|---|
+|parameters|Array(Parameger)|[]|the common parameters|
+|interceptor|XArray(string)|[]|the common interceptor names|
+|failure|stirng|undefined|the default failure processor name|
+|groups|Array(Group)|**required**|the router group|
+
+#### Object(Group)
+|*Key*|*Type*|*Default*|*Description*|
+|---|---|---|---|
+|parameters|Array(Parameger)|[]|the common parameters|
+|interceptor|XArray(string)|[]|the interceptor names|
+|failure|stirng|undefined|the failure processor name|
+|processors|Array(Processor)|**required**|the router parameters|
+
+#### Object(Processor)
+|*Key*|*Type*|*Default*|*Description*|
+|---|---|---|---|
+|method|XArray(string)|**required**|METHOD|
+|url|XArray(string)|**required**|URL|
+|parameters|Array(Parameger)|[]|the common parameters|
+|failure|stirng|undefined|the failure processor name|
+|processor|string|**required**|the processor name|
+|workdata|Object|undefined|attach to **req**|
+|workparam|Object|undefined|attach to **req**|
+
+#### Object(Parameter)
+|*Key*|*Type*|*Default*|*Description*|
+|---|---|---|---|
+|name|string|**required**|the name|
+|empty|boolean|false|accept empty value|,
+|default|stringOrNumber|undefined|the default value when empty|
+|candiate|string|undefined|accept empty when **has** another prameter|
+|match|string|undefined|accept value when **equal** another prameter|
+|trim|boolean|false|trim the value string|
+|digit|boolean|false|accept digit number value|
+|length_min|number|1|accept value minimal **length**|
+|length_max|number|undefined|accept value maximal **length**|
+|word|boolean|false|accept value match **Word**|
+|regexp|string|false|accept value match **regexp**|
+|values|Array(stringOrNumber)|undefined|validate value **IN** array|
+|range|Array(number)[2]|undefined|accept vlaue **IN** range|
+
 ## License
 
 [MIT](LICENSE)
