@@ -1,3 +1,9 @@
+1.3.12
+========
+
+  * Add attribute cache for viewer
+  * Add document for routet file
+
 1.3.11
 ========
 
