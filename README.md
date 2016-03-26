@@ -3,7 +3,7 @@
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
 
-Node.js smart restful framework.
+Node.js smart restful framework. current core use **express**.
 
 ## Installation
 
@@ -31,6 +31,8 @@ var bigrest = require('bigrest')
 |--app.js
 ```
 
+> XArray(stirng) was a Array(String) or a Array split edby ",".
+
 ### Parameter: opts
 
 The options for bigrest framework.
@@ -38,19 +40,21 @@ The options for bigrest framework.
 |*Key*|*Type*|*Default*|*Description*|
 |---|---|---|---|
 |debug|boolean|false|debug mode switch|
-|https|boolean|false|use HTTPS protocol|
+|https|Object|undefined|options for HTTPS protocol|
 |compression|boolean|false|use compression|
 |basepath|string|process.cwd()|the base path|
-|services|array(string)|services|the handelers and routers path|
+|services|XArray(string)|services|the handelers and routers path|
 |rootwork|function|undefined|the '/' for all METHOD handler|
 |visitor|function|undefiend|the pre processor the all handler|
-|viewer|object(viewer)|undeifned|set html template engine|
-|limits|object(limits)|undeifned|the limits for request parse|
-|static|object or array (static)|undefiend|set static file engine|
-|session|object(session)|undefined|set session engine|
-|middlewares|array(function)|[]|the middlewares for express|
+|viewer|Object(viewer)|undeifned|set html template engine|
+|limits|Object(limits)|undeifned|the limits for request parse|
+|static|Object or Array (static)|undefiend|set static file engine|
+|session|Object(session)|undefined|set session engine|
+|middlewares|Array(function)|[]|the middlewares for express|
 
-#### object(viewer)
+> https documents [https.createServer](https://nodejs.org/api/https.html#https_https_createserver_options_requestlistener)
+
+#### Object(viewer)
 |*Key*|*Type*|*Default*|*Description*|
 |---|---|---|---|
 |filepath|string|undefined|the template source file path|
@@ -64,7 +68,7 @@ The options for bigrest framework.
 }
 ```
 
-#### object(limits)
+#### Object(limits)
 |*Key*|*Type*|*Default*|*Description*|
 |---|---|---|---|
 |bodySize|number|2mb|the request body size|
@@ -78,12 +82,12 @@ The options for bigrest framework.
 }
 ```
 
-#### object(static)
+#### Object(static)
 |*Key*|*Type*|*Default*|*Description*|
 |---|---|---|---|
 |urlpath|string|undefined|the url path|
 |filepath|string|undefined|the static file's file path|
-|options|object|undefined|the static options|
+|options|Object|undefined|the static options|
 
 > *options* means in the [express.static](http://expressjs.com/en/4x/api.html#express.static)
 
@@ -95,7 +99,7 @@ The options for bigrest framework.
 
 ```
 
-#### object(session)
+#### Object(session)
 
 > it wrapped the [express-session](https://github.com/expressjs/session)
 
@@ -126,8 +130,7 @@ Binds and listens for connections on the port.
 
 ### **router json format**
 
-it has three style, Object(container), Array(Group), Object(Group).
-> XArray(stirng) was a Array(String) or a array split edby ",".
+it has three style, Object(container), Array(group), Object(group).
 
 #### Object(container)
 |*Key*|*Type*|*Default*|*Description*|
@@ -135,28 +138,28 @@ it has three style, Object(container), Array(Group), Object(Group).
 |parameters|Array(Parameger)|[]|the common parameters|
 |interceptor|XArray(string)|[]|the common interceptor names|
 |failure|stirng|undefined|the default failure processor name|
-|groups|Array(Group)|**required**|the router group|
+|groups|Array(group)|**required**|the router group|
 
-#### Object(Group)
+#### Object(group)
 |*Key*|*Type*|*Default*|*Description*|
 |---|---|---|---|
 |parameters|Array(Parameger)|[]|the common parameters|
 |interceptor|XArray(string)|[]|the interceptor names|
 |failure|stirng|undefined|the failure processor name|
-|processors|Array(Processor)|**required**|the router parameters|
+|processors|Array(processor)|**required**|the router parameters|
 
-#### Object(Processor)
+#### Object(processor)
 |*Key*|*Type*|*Default*|*Description*|
 |---|---|---|---|
 |method|XArray(string)|**required**|METHOD|
 |url|XArray(string)|**required**|URL|
-|parameters|Array(Parameger)|[]|the common parameters|
+|parameters|Array(parameger)|[]|the common parameters|
 |failure|stirng|undefined|the failure processor name|
 |processor|string|**required**|the processor name|
 |workdata|Object|undefined|attach to **req**|
 |workparam|Object|undefined|attach to **req**|
 
-#### Object(Parameter)
+#### Object(parameter)
 |*Key*|*Type*|*Default*|*Description*|
 |---|---|---|---|
 |name|string|**required**|the name|
@@ -170,7 +173,7 @@ it has three style, Object(container), Array(Group), Object(Group).
 |length_max|number|undefined|accept value maximal **length**|
 |word|boolean|false|accept value match **Word**|
 |regexp|string|false|accept value match **regexp**|
-|values|Array(stringOrNumber)|undefined|validate value **IN** array|
+|values|Array(stringOrNumber)|undefined|validate value **IN** Array|
 |range|Array(number)[2]|undefined|accept vlaue **IN** range|
 
 ## License
