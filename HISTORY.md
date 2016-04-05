@@ -1,3 +1,13 @@
+1.4.1
+========
+
+  * Add session initialize check
+
+1.4.0
+========
+
+  * New base release
+
 1.3.12
 ========
 
