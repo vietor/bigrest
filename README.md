@@ -109,6 +109,7 @@ The options for bigrest framework.
 |resave|boolean|false|save session event if not modified|
 |saveUninitialized|boolean|false|save session event it not initialized|
 |store|function|undefined|the default session engine|
+|storeNeedReady|boolean|true|check session store initialize status|
 
 ```javascript
 {
