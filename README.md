@@ -31,7 +31,7 @@ var bigrest = require('bigrest')
 |--app.js
 ```
 
-> XArray(string) was a Array(string) or a Array split edby ",".
+> XArray(string) was a Array(string) or a Array splited by ",".
 
 ### Parameter: opts
 
