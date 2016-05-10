@@ -1,3 +1,10 @@
+1.4.3
+========
+
+  * Refactory some code
+  * Add more HTTP code support
+  * deps: body-parser@~1.15.1
+
 1.4.2
 ========
 
