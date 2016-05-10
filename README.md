@@ -31,7 +31,8 @@ var bigrest = require('bigrest')
 |--app.js
 ```
 
-> XArray(string) was a Array(string) or a Array splited by ",".
+> XArray(string) was a Array(string) or a Array splited by ",".  
+> XArray(*object*) was a Array(*object*) or a Object(*object*) ",".
 
 ### Parameter: opts
 
@@ -43,12 +44,12 @@ The options for bigrest framework.
 |https|Object|undefined|options for HTTPS protocol|
 |compression|boolean|false|use compression|
 |basepath|string|process.cwd()|the base path|
-|services|XArray(string)|services|the handelers and routers path|
+|services|XArray(string)|services|the **handlers and routers** path|
 |rootwork|function|undefined|the '/' for all METHOD handler|
 |visitor|function|undefiend|the pre processor the all handler|
 |viewer|Object(viewer)|undeifned|set html template engine|
 |limits|Object(limits)|undeifned|the limits for request parse|
-|static|Object or Array (static)|undefiend|set static file engine|
+|static|XArray(static)|undefiend|set static file engine|
 |session|Object(session)|undefined|set session engine|
 |middlewares|Array(function)|[]|the middlewares for express|
 
