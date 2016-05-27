@@ -1,3 +1,11 @@
+1.4.4
+========
+
+  * Add etag switch for options
+  * Add compression options support
+  * deps: compression@~1.6.2
+  * deps: cookie-parser@~1.4.3
+
 1.4.3
 ========
 
