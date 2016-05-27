@@ -42,7 +42,7 @@ The options for bigrest framework.
 |---|---|---|---|
 |debug|boolean|false|debug mode switch|
 |https|Object|undefined|options for HTTPS protocol|
-|compression|boolean|false|use compression|
+|compression|boolean or Object|false|use or options for compression|
 |basepath|string|process.cwd()|the base path|
 |services|XArray(string)|services|the **handlers and routers** path|
 |rootwork|function|undefined|the '/' for all METHOD handler|
@@ -53,7 +53,8 @@ The options for bigrest framework.
 |session|Object(session)|undefined|set session engine|
 |middlewares|Array(function)|[]|the middlewares for express|
 
-> https documents [https.createServer](https://nodejs.org/api/https.html#https_https_createserver_options_requestlistener)
+> https documents [https.createServer](https://nodejs.org/api/https.html#https_https_createserver_options_requestlistener)  
+> compression as **options** documents [compression](https://github.com/expressjs/compression#compressionoptions)
 
 #### Object(viewer)
 |*Key*|*Type*|*Default*|*Description*|

@@ -37,7 +37,7 @@
     ],
     "dependencies": {
         "body-parser": "~1.15.1",
-        "compression": "^1.6.1",
+        "compression": "^1.6.2",
         "connect-multiparty": "~2.0.0",
         "cookie-parser": "~1.4.1",
         "express": "~4.13.4",
