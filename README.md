@@ -41,8 +41,9 @@ The options for bigrest framework.
 |*Key*|*Type*|*Default*|*Description*|
 |---|---|---|---|
 |debug|boolean|false|debug mode switch|
+|etag|boolean|false|switch on **ETAG** generation|
 |https|Object|undefined|options for HTTPS protocol|
-|compression|boolean or Object|false|use or options for compression|
+|compression|boolean or Object|false|switch or options for compression|
 |basepath|string|process.cwd()|the base path|
 |services|XArray(string)|services|the **handlers and routers** path|
 |rootwork|function|undefined|the '/' for all METHOD handler|
