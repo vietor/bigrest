@@ -8,5 +8,8 @@ var http = bigrest.listen(18080, {
     static: {
         urlpath: '/files',
         filepath: path.join(__dirname, 'files')
+    },
+    compression: {
+        threshold: 16 * 1024
     }
 });
