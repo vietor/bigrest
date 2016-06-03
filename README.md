@@ -3,7 +3,7 @@
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
 
-Node.js smart restful framework. current core use **express**.
+Smart web and restful framework for NodeJS. current core is [**express**](http://expressjs.com).
 
 ## Installation
 
@@ -179,6 +179,11 @@ it has three style, Object(container), Array(group), Object(group).
 |regexp|string|false|accept value match **regexp**|
 |values|Array(stringOrNumber)|undefined|validate value **IN** Array|
 |range|Array(number)[2]|undefined|accept vlaue **IN** range|
+
+## Examples
+
+[demo](https://github.com/vietor/bigrest/tree/master/demo)  
+[bigbbs](https://github.com/vietor/bigbbs)
 
 ## License
 
