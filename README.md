@@ -169,7 +169,7 @@ it has three style, Object(container), Array(group), Object(group).
 |name|string|**required**|the name|
 |empty|boolean|false|accept empty value|,
 |default|stringOrNumber|undefined|the default value when empty|
-|candiate|string|undefined|accept empty when **has** another prameter|
+|candidate|string|undefined|accept empty when **has** another prameter|
 |match|string|undefined|accept value when **equal** another prameter|
 |trim|boolean|false|trim the value string|
 |digit|boolean|false|accept digit number value|
