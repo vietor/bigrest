@@ -1,3 +1,10 @@
+1.4.5
+========
+
+  * deps: body-parser@~1.15.2
+  * deps: express@~4.14.0
+  * deps: express-session@~1.14.0
+
 1.4.4
 ========
 

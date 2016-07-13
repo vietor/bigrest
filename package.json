@@ -1,7 +1,7 @@
 {
     "name": "bigrest",
     "description": "Smart web and restful framework for NodeJS",
-    "version": "1.4.4",
+    "version": "1.4.5",
     "keywords": [
         "rest",
         "restful",
@@ -36,12 +36,12 @@
         "lib/"
     ],
     "dependencies": {
-        "body-parser": "~1.15.1",
+        "body-parser": "~1.15.2",
         "compression": "~1.6.2",
         "connect-multiparty": "~2.0.0",
         "cookie-parser": "~1.4.3",
-        "express": "~4.13.4",
-        "express-session": "~1.13.0"
+        "express": "~4.14.0",
+        "express-session": "~1.14.0"
     },
     "devDependencies": {
         "mocha": "^2.2.5",
