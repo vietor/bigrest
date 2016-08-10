@@ -1,3 +1,8 @@
+1.4.6
+========
+
+  * Add length[min,max], range_min, range_max for parameter check
+
 1.4.5
 ========
 

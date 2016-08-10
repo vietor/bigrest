@@ -36,6 +36,22 @@ describe('parameter', function() {
                 done();
             });
         });
+        it('should failed when key length/array lt set', function(done) {
+            http.request('GET', '/test/length/array', {
+                key: '1'
+            }, function(status, res) {
+                assert.equal(status, 400);
+                done();
+            });
+        });
+        it('should failed when key length/array gt set', function(done) {
+            http.request('GET', '/test/length/array', {
+                key: '123456'
+            }, function(status, res) {
+                assert.equal(status, 400);
+                done();
+            });
+        });
     });
 
     describe('digit', function() {
@@ -116,7 +132,7 @@ describe('parameter', function() {
     });
 
     describe('range', function() {
-        it('should successed when key int range', function(done) {
+        it('should successed when key in range', function(done) {
             http.request('GET', '/test/range', {
                 key: '1'
             }, function(status, res) {
@@ -126,6 +142,22 @@ describe('parameter', function() {
         });
         it('should failed when key not in range', function(done) {
             http.request('GET', '/test/range', {
+                key: '13'
+            }, function(status, res) {
+                assert.equal(status, 400);
+                done();
+            });
+        });
+        it('should successed when key in range/array', function(done) {
+            http.request('GET', '/test/range/array', {
+                key: '1'
+            }, function(status, res) {
+                assert.equal(status, 200);
+                done();
+            });
+        });
+        it('should failed when key not in range/array', function(done) {
+            http.request('GET', '/test/range/array', {
                 key: '13'
             }, function(status, res) {
                 assert.equal(status, 400);

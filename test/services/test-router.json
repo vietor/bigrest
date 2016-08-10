@@ -17,6 +17,18 @@
                 "workparam": {
                 }
             },{
+                "url" : "/test/length/array",
+                "method" : "GET",
+                "processor": "test_parameter",
+                "parameters" : [{
+                    "name" : "key",
+                    "length": [3,5]
+                }],
+                "workdata": {
+                },
+                "workparam": {
+                }
+            },{
                 "url" : "/test/digit",
                 "method" : "GET",
                 "processor": "test_parameter",
@@ -79,6 +91,22 @@
                 "processor": "test_parameter",
                 "parameters" : [{
                     "name" : "key",
+                    "range_nin": 1,
+                    "range_max": 12
+                }],
+                "workdata": {
+                },
+                "workparam": {
+                }
+            }]
+        },{
+            "interceptor": "test_interceptor",
+            "processors": [{
+                "url" : "/test/range/array",
+                "method" : "GET",
+                "processor": "test_parameter",
+                "parameters" : [{
+                    "name" : "key",
                     "range": [1, 12]
                 }],
                 "workdata": {
@@ -86,8 +114,7 @@
                 "workparam": {
                 }
             }]
-        },
-        {
+        },{
             "interceptor": "test_interceptor",
             "processors": [{
                 "url" : "/test/match",

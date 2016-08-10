@@ -173,12 +173,15 @@ it has three style, Object(container), Array(group), Object(group).
 |match|string|undefined|accept value when **equal** another prameter|
 |trim|boolean|false|trim the value string|
 |digit|boolean|false|accept digit number value|
+|length|Array(number)[min,max]|undefined|accept vlaue **length** **IN** range|
 |length_min|number|1|accept value minimal **length**|
 |length_max|number|undefined|accept value maximal **length**|
 |word|boolean|false|accept value match **Word**|
 |regexp|string|false|accept value match **regexp**|
 |values|Array(stringOrNumber)|undefined|validate value **IN** Array|
-|range|Array(number)[2]|undefined|accept vlaue **IN** range|
+|range|Array(number)[min,max]|undefined|accept vlaue **IN** range|
+|range_min|number|undefined|accept minimal value|
+|range_max|number|undefined|accept maximal value|
 
 ## Examples
 
