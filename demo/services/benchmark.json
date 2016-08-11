@@ -47,7 +47,7 @@
             "parameters": [
                 {
                     "name": "value",
-                    "regexp": "^[0-9a-zA-Z]$"
+                    "regexp": "^[0-9a-zA-Z]+$"
                 }
             ]
         }
