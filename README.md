@@ -11,24 +11,33 @@ Smart web and restful framework for NodeJS. current core is [**express**](http:/
 $ npm install bigrest
 ```
 
-## API
+## Usage
 
 ```js
 var bigrest = require('bigrest')
 ```
 
-### Directory tree
+## API
 
-```sh
-|--{basepath}
-|   |--commons
-|   |   |--test.js
-|   |--methods
-|   |   |--test.js
-|   |--services
-|   |   |--test-router.json
-|   |   |--test.js
-|--app.js
+### listen(port, opts)
+
+Binds and listens for connections on the port.
+
+``` javascript
+var path = require('path');
+var bigrest = require('../index');
+
+var http = bigrest.listen(18080, {
+    basepath: __dirname,
+    static: {
+        urlpath: '/files',
+        filepath: path.join(__dirname, 'files')
+    },
+    compression: {
+        threshold: 16 * 1024
+    }
+});
+
 ```
 
 > XArray(string) was a Array(string) or a Array splited by ",".  
@@ -128,15 +137,67 @@ The options for bigrest framework.
 }
 ```
 
-### listen(port, opts)
+## Directory
 
-Binds and listens for connections on the port.
+```sh
+|--{basepath}
+|   |--commons
+|   |   |--test.js
+|   |--methods
+|   |   |--test.js
+|   |--services
+|   |   |--test-router.json
+|   |   |--test.js
+|--server.js
+```
 
-### **router json format**
+### Global variables
+
+|*Name*|*Path*|*Export Variables*|*Export methods*|
+|---|---|---|---|
+|brcx|commons/|*UpperCase named, number & string*|all|
+|brmx|method/|*UpperCase named, number & string*|lowercase named|
+
+### Router And Processor
+
+> services/test-router.json
+
+``` json
+{
+    "processors": [
+        {
+            "url": "/benchmark",
+            "method": "GET",
+            "processor": "benchmark_empty",
+            "parameters": []
+        }
+    ]
+}
+```
+
+> services/test.js
+
+``` javascript
+exports.benchmark_empty = function(req, res) {
+    brmx.benchmark(function() {
+        res.send('OK');
+    });
+};
+```
+
+> methods/test.js
+
+``` javascript
+exports.benchmark = function(callback) {
+    callback(null);
+};
+```
+
+#### Router File Format
 
 it has three style, Object(container), Array(group), Object(group).
 
-#### Object(container)
+##### Object(container)
 |*Key*|*Type*|*Default*|*Description*|
 |---|---|---|---|
 |parameters|Array(Parameger)|[]|the common parameters|
@@ -144,7 +205,7 @@ it has three style, Object(container), Array(group), Object(group).
 |failure|stirng|undefined|the default failure processor name|
 |groups|Array(group)|**required**|the router group|
 
-#### Object(group)
+##### Object(group)
 |*Key*|*Type*|*Default*|*Description*|
 |---|---|---|---|
 |parameters|Array(Parameger)|[]|the common parameters|
@@ -152,7 +213,7 @@ it has three style, Object(container), Array(group), Object(group).
 |failure|stirng|undefined|the failure processor name|
 |processors|Array(processor)|**required**|the router parameters|
 
-#### Object(processor)
+##### Object(processor)
 |*Key*|*Type*|*Default*|*Description*|
 |---|---|---|---|
 |method|XArray(string)|**required**|METHOD|
@@ -163,7 +224,7 @@ it has three style, Object(container), Array(group), Object(group).
 |workdata|Object|undefined|attach to **req**|
 |workparam|Object|undefined|attach to **req**|
 
-#### Object(parameter)
+##### Object(parameter)
 |*Key*|*Type*|*Default*|*Description*|
 |---|---|---|---|
 |name|string|**required**|the name|
