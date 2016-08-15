@@ -12,7 +12,7 @@ var http = bigrest.simulator({
 describe('parameter', function() {
 
     describe('length', function() {
-        it('should successed when key eq contain set', function(done) {
+        it('should successed when key length eq contain set', function(done) {
             http.request('GET', '/test/length', {
                 key: '12345'
             }, function(status, res) {
@@ -33,6 +33,14 @@ describe('parameter', function() {
                 key: '123456'
             }, function(status, res) {
                 assert.equal(status, 400);
+                done();
+            });
+        });
+        it('should successed when key length/array eq contain set', function(done) {
+            http.request('GET', '/test/length/array', {
+                key: '12345'
+            }, function(status, res) {
+                assert.equal(status, 200);
                 done();
             });
         });
