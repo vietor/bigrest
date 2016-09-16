@@ -2,6 +2,9 @@
 ========
 
   * Add length[min,max], range_min, range_max for parameter check
+  * Add lodash usage
+  * Refactory parameter test
+  * deps: express-session@~1.14.1
 
 1.4.5
 ========

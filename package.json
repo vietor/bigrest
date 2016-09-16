@@ -1,14 +1,12 @@
 {
     "name": "bigrest",
     "description": "Smart web and restful framework for NodeJS",
-    "version": "1.4.5",
+    "version": "1.4.6",
     "keywords": [
-        "rest",
+        "web",
         "restful",
         "express",
-        "framework",
-        "web",
-        "app"
+        "framework"
     ],
     "homepage": "https://github.com/vietor/bigrest",
     "repository": {
@@ -41,8 +39,8 @@
         "connect-multiparty": "~2.0.0",
         "cookie-parser": "~1.4.3",
         "express": "~4.14.0",
-        "express-session": "~1.14.0",
-        "lodash": "^4.14.2"
+        "express-session": "~1.14.1",
+        "lodash": "^4.15.0"
     },
     "devDependencies": {
         "mocha": "^2.2.5",
