@@ -59,7 +59,8 @@ The options for bigrest framework.
 |visitor|function|undefiend|the pre processor the all handler|
 |viewer|Object(viewer)|undeifned|set html template engine|
 |limits|Object(limits)|undeifned|the limits for request parse|
-|static|XArray(static)|undefiend|set static file engine|
+|statics|XArray(static)|undefiend|set static file engine|
+|static|XArray(static)|undefiend|deprecated, alias of statics|
 |session|Object(session)|undefined|set session engine|
 |middlewares|Array(function)|[]|the middlewares for express|
 
