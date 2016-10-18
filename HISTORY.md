@@ -1,3 +1,9 @@
+1.4.7
+========
+
+  * Modify some options attribute support
+  * deps: lodash@~4.16.4
+
 1.4.6
 ========
 
