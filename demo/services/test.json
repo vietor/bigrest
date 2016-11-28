@@ -1,0 +1,16 @@
+{
+    "processors": [
+        {
+            "url": "/test",
+            "method": "GET",
+            "processor": "test_get",
+            "parameters": []
+        },
+        {
+            "url": "/test",
+            "method": "POST",
+            "processor": "test_post",
+            "parameters": []
+        }
+    ]
+}
