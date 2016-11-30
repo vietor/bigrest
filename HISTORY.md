@@ -1,3 +1,9 @@
+1.4.8
+========
+
+  * Add more check for **error handle**
+  * deps: lodash@~4.17.2
+
 1.4.7
 ========
 
