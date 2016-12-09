@@ -1,7 +1,7 @@
 {
     "name": "bigrest",
     "description": "Smart web and restful framework for NodeJS",
-    "version": "1.4.8",
+    "version": "1.4.9",
     "keywords": [
         "web",
         "restful",

@@ -1,3 +1,8 @@
+1.4.9
+========
+
+  * Refactory code for **error handle**
+
 1.4.8
 ========
 
