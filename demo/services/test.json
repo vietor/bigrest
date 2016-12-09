@@ -11,6 +11,18 @@
             "method": "POST",
             "processor": "test_post",
             "parameters": []
+        },
+        {
+            "url": "/test/throw",
+            "method": "GET",
+            "processor": "test_throw",
+            "parameters": []
+        },
+        {
+            "url": "/test/throw/send",
+            "method": "GET",
+            "processor": "test_throw_send",
+            "parameters": []
         }
     ]
 }
