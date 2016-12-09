@@ -18,5 +18,10 @@
         "parameters" : [{
             "name" : "key"
         }]
+    },{
+        "url" : "/wrong/failure/throw",
+        "method" : "GET",
+        "processor": "wrong_self_throw",
+        "parameters" : []
     }]
 }

@@ -216,4 +216,13 @@ describe('wrong', function() {
             });
         });
     });
+
+    describe('catch-throw', function() {
+        it('should successed when self throw', function(done) {
+            http.request('GET', '/wrong/failure/throw', {}, function(status, res) {
+                assert.equal(status, 500);
+                done();
+            });
+        });
+    });
 });
