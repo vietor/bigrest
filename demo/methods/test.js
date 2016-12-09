@@ -1,5 +1,4 @@
 exports.test_throw = function(callback) {
-    var bad;
-    var pos = bad.indexOf('.');
+    brcx.throwError();
     callback(null);
 };

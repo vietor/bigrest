@@ -1,28 +1,45 @@
 {
-    "processors": [
+    "groups": [
         {
-            "url": "/test",
-            "method": "GET",
-            "processor": "test_get",
-            "parameters": []
+            "processors": [
+                {
+                    "url": "/test",
+                    "method": "GET",
+                    "processor": "test_get",
+                    "parameters": []
+                },
+                {
+                    "url": "/test",
+                    "method": "POST",
+                    "processor": "test_post",
+                    "parameters": []
+                },
+                {
+                    "url": "/test/throw",
+                    "method": "GET",
+                    "processor": "test_throw",
+                    "parameters": []
+                },
+                {
+                    "url": "/test/throw/send",
+                    "method": "GET",
+                    "processor": "test_throw_send",
+                    "parameters": []
+                }
+            ]
         },
         {
-            "url": "/test",
-            "method": "POST",
-            "processor": "test_post",
-            "parameters": []
-        },
-        {
-            "url": "/test/throw",
-            "method": "GET",
-            "processor": "test_throw",
-            "parameters": []
-        },
-        {
-            "url": "/test/throw/send",
-            "method": "GET",
-            "processor": "test_throw_send",
-            "parameters": []
+            "interceptor": [
+                "test_interceptor"
+            ],
+            "processors": [
+                {
+                    "url": "/test/throw/failure",
+                    "method": "GET",
+                    "processor": "test_throw",
+                    "parameters": []
+                }
+            ]
         }
     ]
 }

@@ -1,3 +1,8 @@
+exports.test_interceptor = function(req, res) {
+    console.log("test_interceptor");
+    brcx.throwError();
+};
+
 exports.test_get = function(req, res) {
     res.send('GET, OK');
 };
