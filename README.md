@@ -55,7 +55,8 @@ The options for bigrest framework.
 |compression|boolean or Object|false|switch or options for compression|
 |basepath|string|process.cwd()|the base path|
 |services|XArray(string)|services|the **handlers and routers** path|
-|rootwork|function|undefined|the '/' for all METHOD handler|
+|rootwork|function|undefined|the all METHOD handler for '/'|
+|r404work|function|undefined|the all METHOD handler when 404|
 |visitor|function|undefiend|the pre processor the all handler|
 |viewer|Object(viewer)|undeifned|set html template engine|
 |limits|Object(limits)|undeifned|the limits for request parse|
