@@ -12,5 +12,14 @@ var http = bigrest.listen(18080, {
     },
     compression: {
         threshold: 16 * 1024
+    },
+    rootwork: function(req, res) {
+        res.send('It works...');
+    },
+    r404work: function(req, res, next) {
+        if(req.path !== '/404')
+            next();
+        else
+            res.redirect('/');
     }
 });
