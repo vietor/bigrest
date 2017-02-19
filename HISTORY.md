@@ -1,3 +1,10 @@
+1.5.0
+========
+
+* Add options.cookieSession support
+* Remove options.session.store 'function' support
+* Rename options.session.storeNeedReady to storeStatusCheck
+
 1.4.10
 ========
 

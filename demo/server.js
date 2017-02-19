@@ -21,5 +21,8 @@ var http = bigrest.listen(18080, {
             next();
         else
             res.redirect('/');
+    },
+    cookieSession: {
+        secret: 'demo'
     }
 });

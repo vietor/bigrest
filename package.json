@@ -1,7 +1,7 @@
 {
     "name": "bigrest",
     "description": "Smart web and restful framework for NodeJS",
-    "version": "1.4.10",
+    "version": "1.5.0",
     "keywords": [
         "web",
         "restful",
@@ -38,6 +38,7 @@
         "compression": "~1.6.2",
         "connect-multiparty": "~2.0.0",
         "cookie-parser": "~1.4.3",
+        "cookie-session": "^2.0.0-alpha.3",
         "express": "~4.14.0",
         "express-session": "~1.14.1",
         "lodash": "~4.17.2"

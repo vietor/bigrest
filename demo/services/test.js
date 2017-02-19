@@ -1,9 +1,12 @@
+"use strict";
+
 exports.test_interceptor = function(req, res) {
     console.log("test_interceptor");
     brcx.throwError();
 };
 
 exports.test_get = function(req, res) {
+    req.session.test = 'ok';
     res.send('GET, OK');
 };
 
