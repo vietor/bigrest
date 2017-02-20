@@ -6,7 +6,6 @@ exports.test_interceptor = function(req, res) {
 };
 
 exports.test_get = function(req, res) {
-    req.session.test = 'ok';
     res.send('GET, OK');
 };
 

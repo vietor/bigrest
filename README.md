@@ -62,9 +62,7 @@ The options for bigrest framework.
 |limits|Object(limits)|undeifned|the limits for request parse|
 |statics|XArray(static)|undefiend|set static file engine|
 |static|XArray(static)|undefiend|deprecated, alias of statics|
-|session|Object(session)|undefined|the session engine|
 |middlewares|Array(function)|[]|the middlewares for express|
-|cookiesession|Object(cookie-session)|undefined|the cookie-session engine when not set `session`|
 
 > https documents [https.createServer](https://nodejs.org/api/https.html#https_https_createserver_options_requestlistener)  
 > compression as **options** documents [compression](https://github.com/expressjs/compression#compressionoptions)
@@ -112,48 +110,6 @@ The options for bigrest framework.
     filepath: path.join(__dirname, "static")
 }
 
-```
-
-#### Object(session)
-
-> it wrapped the [express-session](https://github.com/expressjs/session)
-
-|*Key*|*Type*|*Default*|*Description*|
-|---|---|---|---|
-|name|string|SESSIONID|the cookie name|
-|resave|boolean|false|save session event if not modified|
-|saveUninitialized|boolean|false|save session event it not initialized|
-|store|object|MemoryStore|The session store instance|
-|storeStatusCheck|boolean|true|Check session store initialize status|
-
-```javascript
-var session = require('express-session');
-var RedisStore = require('connect-redis')(session);
-...
-
-{
-    name: 'SESSIONID',
-    resave: false,
-    saveUninitialized: false,
-    store: new RedisStore({
-        host: '127.0.0.1',
-            port: 6379
-    });
-}
-```
-
-#### Object(cookie-session)
-
-> it wrapped the [cookie-session](https://github.com/expressjs/cookie-session)
-
-|*Key*|*Type*|*Default*|*Description*|
-|---|---|---|---|
-|name|string|SESSIONID|the cookie name|
-
-```javascript
-{
-    name: 'SESSIONID'
-}
 ```
 
 ## Directory
