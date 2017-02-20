@@ -1,11 +1,11 @@
 "use strict";
 
 exports.test_interceptor = function(req, res) {
-    if(req.param('false') == '1') {
+    if (req.param('false') == '1') {
         res.send('has false=1');
         return false;
     }
-    if(req.param('throw') == '1') {
+    if (req.param('throw') == '1') {
         return false;
     }
     return true;

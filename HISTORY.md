@@ -1,3 +1,12 @@
+1.5.1
+========
+
+* Remove session support, use opts.middlewares for support it.
+* Add more check for interceptor
+* deps: lodash@~4.17.4
+* deps: express@~4.14.1
+* deps: body-parser@~1.16.1
+
 1.5.0
 ========
 

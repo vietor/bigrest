@@ -17,7 +17,7 @@ var http = bigrest.listen(18080, {
         res.send('It works...');
     },
     r404work: function(req, res, next) {
-        if(req.path !== '/404')
+        if (req.path !== '/404')
             next();
         else
             res.redirect('/');
