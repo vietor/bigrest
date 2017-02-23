@@ -29,10 +29,10 @@ var bigrest = require('../index');
 
 var http = bigrest.listen(18080, {
     basepath: __dirname,
-    static: {
+    statics: [{
         urlpath: '/files',
         filepath: path.join(__dirname, 'files')
-    },
+    }],
     compression: {
         threshold: 16 * 1024
     }
