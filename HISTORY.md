@@ -1,3 +1,9 @@
+1.5.2
+========
+
+* Ignore error on remove the upload temp file.
+* Add more compatible for newest NodeJS.
+
 1.5.1
 ========
 
