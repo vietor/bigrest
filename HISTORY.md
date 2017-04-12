@@ -3,6 +3,8 @@
 
 * Ignore error on remove the upload temp file.
 * Add more compatible for newest NodeJS.
+* deps: express@~4.15.2
+* deps: body-parser@~1.17.1
 
 1.5.1
 ========
