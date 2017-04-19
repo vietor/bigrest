@@ -1,3 +1,8 @@
+1.5.4
+========
+
+* Fix intercepter result check
+
 1.5.3
 ========
 
