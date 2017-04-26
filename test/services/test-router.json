@@ -52,6 +52,18 @@
                 },
                 "workparam": {
                 }
+            },{
+                "url" : "/test/default",
+                "method" : "GET",
+                "processor": "test_parameter",
+                "parameters" : [{
+                    "name" : "key",
+                    "default": "1212"
+                }],
+                "workdata": {
+                },
+                "workparam": {
+                }
             }]
         },{
             "interceptor": "test_interceptor",

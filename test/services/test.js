@@ -13,7 +13,7 @@ exports.test_interceptor = function(req, res) {
 exports.test_parameter = function(req, res) {
     brmethods.test(req.param("key"), function(err, text) {
         res.send({
-            "result": text
+            result: text
         });
     });
 };
