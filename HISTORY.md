@@ -1,3 +1,9 @@
+1.5.5
+========
+
+* Refactory code for parameter validator
+* Performance the req.param() implementation
+
 1.5.4
 ========
 
