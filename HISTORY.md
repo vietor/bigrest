@@ -1,3 +1,10 @@
+1.5.6
+========
+
+* Fix req.param() implementation
+* deps: express@~4.15.3
+* deps: body-parser@~1.17.2
+
 1.5.5
 ========
 
