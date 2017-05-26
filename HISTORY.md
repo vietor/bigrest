@@ -1,3 +1,8 @@
+1.5.7
+========
+
+* Fix __bigrest_params usage since 1.5.5
+
 1.5.6
 ========
 
