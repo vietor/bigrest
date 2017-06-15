@@ -12,11 +12,17 @@ exports.test_interceptor = function(req, res) {
 };
 
 exports.test_get = function(req, res) {
-    res.send('GET, OK');
+    res.send({
+        query: req.query
+    });
 };
 
 exports.test_post = function(req, res) {
-    res.send('POST, OK');
+    res.send({
+        query: req.query,
+        body: req.body,
+        files: req.files
+    });
 };
 
 exports.test_throw = function(req, res) {
