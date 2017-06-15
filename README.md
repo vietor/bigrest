@@ -85,7 +85,6 @@ The options for bigrest framework.
 |*Key*|*Type*|*Default*|*Description*|
 |---|---|---|---|
 |bodySize|number|2mb|the request body size|
-|uploadDir|string|undefiend|the dir for file upload|
 |uploadSize|number|50mb|the maximum size for file upload|
 
 ```javascript
