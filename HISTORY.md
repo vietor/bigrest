@@ -1,3 +1,9 @@
+1.5.8
+========
+
+* Use 'strict mode' for 'application/json'
+* Fix 'req.query' merge the 'req.body' & 'req.params'
+
 1.5.7
 ========
 
