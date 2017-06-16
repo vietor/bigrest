@@ -108,7 +108,6 @@ The options for bigrest framework.
     urlpath: '/static',
     filepath: path.join(__dirname, "static")
 }
-
 ```
 
 ## Directory
@@ -217,6 +216,19 @@ it has three style, Object(container), Array(group), Object(group).
 |range|Array(number)[min,max]|undefined|accept vlaue **IN** range|
 |range_min|number|undefined|accept minimal value|
 |range_max|number|undefined|accept maximal value|
+
+### req.files Information
+
+It's a file array, each file contains the following information:
+
+Key | Description |
+--- | --- | ---
+`fieldname` | Field name specified in the form |
+`originalname` | Name of the file on the user's computer |
+`encoding` | Encoding type of the file |
+`mimetype` | Mime type of the file |
+`size` | Size of the file in bytes |
+`path` | The full path to the uploaded file |
 
 ## Examples
 
