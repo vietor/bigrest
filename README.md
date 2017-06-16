@@ -221,14 +221,14 @@ it has three style, Object(container), Array(group), Object(group).
 
 It's array of file, And each file contains the following information:
 
-Key | Description |
---- | --- | ---
-`name` | Field name specified in the form |
-`type` | Mime type of the file |
-`size` | Size of the file in bytes |
-`path` | The full path to the uploaded file |
-`encoding` | Encoding type of the file |
-`originalFilename` | Name of the file on the user's computer |
+|*Key*|*Description*|
+|---|---|
+|`name` | Field name specified in the form |
+|`type` | Mime type of the file |
+|`size` | Size of the file in bytes |
+|`path` | The full path to the uploaded file |
+|`encoding` | Encoding type of the file |
+|`originalFilename` | Name of the file on the user's computer |
 
 ## Examples
 
