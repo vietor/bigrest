@@ -219,16 +219,16 @@ it has three style, Object(container), Array(group), Object(group).
 
 ### req.files Information
 
-It's a file array, each file contains the following information:
+It's array of file, And each file contains the following information:
 
 Key | Description |
 --- | --- | ---
-`fieldname` | Field name specified in the form |
-`originalname` | Name of the file on the user's computer |
-`encoding` | Encoding type of the file |
-`mimetype` | Mime type of the file |
+`name` | Field name specified in the form |
+`type` | Mime type of the file |
 `size` | Size of the file in bytes |
 `path` | The full path to the uploaded file |
+`encoding` | Encoding type of the file |
+`originalFilename` | Name of the file on the user's computer |
 
 ## Examples
 
