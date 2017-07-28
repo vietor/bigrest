@@ -84,7 +84,7 @@ The options for bigrest framework.
 #### Object(limits)
 |*Key*|*Type*|*Default*|*Description*|
 |---|---|---|---|
-|bodySize|number|2mb|the request body size|
+|bodySize|number|4mb|the request body size|
 |uploadSize|number|50mb|the maximum size for file upload|
 
 ```javascript
