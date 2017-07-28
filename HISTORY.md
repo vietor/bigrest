@@ -1,3 +1,11 @@
+2.0.0
+========
+
+* Relace connect-multipart to multer
+* Remove opts.static support
+* Modify default bodySize limit to 4mb
+* Upgrade some deps
+
 1.5.8
 ========
 
