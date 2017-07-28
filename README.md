@@ -61,7 +61,6 @@ The options for bigrest framework.
 |viewer|Object(viewer)|undeifned|set html template engine|
 |limits|Object(limits)|undeifned|the limits for request parse|
 |statics|XArray(static)|undefiend|set static file engine|
-|static|XArray(static)|undefiend|deprecated, alias of statics|
 |middlewares|Array(function)|[]|the middlewares for express|
 
 > https documents [https.createServer](https://nodejs.org/api/https.html#https_https_createserver_options_requestlistener)  
