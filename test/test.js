@@ -197,8 +197,7 @@ describe('parameter', function() {
 
     describe('default', function() {
         it('should successed when no parameter', function(done) {
-            http.request('GET', '/test/default', {
-            }, function(status, res) {
+            http.request('GET', '/test/default', {}, function(status, res) {
                 assert.equal(status, 200);
                 done();
             });
