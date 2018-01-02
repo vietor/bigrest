@@ -198,7 +198,7 @@ it has three style, Object(container), Array(group), Object(group).
 
 ##### Object(parameter)
 
-This is model as [field-inspector](https://github.com/vietor/node-field-inspector#newinstancemodel)
+This is a model definition in [field-inspector](https://github.com/vietor/node-field-inspector#newinstancemodel), click it for more detail.
 
 ### req.files Information
 
@@ -215,7 +215,6 @@ It's array of file, And each file contains the following information:
 ## Examples
 
 [demo](https://github.com/vietor/bigrest/tree/master/demo)  
-[bigbbs](https://github.com/vietor/bigbbs)
 
 ## License
 
