@@ -198,7 +198,7 @@ it has three style, Object(container), Array(group), Object(group).
 
 ##### Object(parameter)
 
-This is a model definition in [field-inspector](https://github.com/vietor/node-field-inspector#newinstancemodel), click it for more detail.
+This is a **Array type** model definition in [field-inspector](https://github.com/vietor/node-field-inspector#newinstancemodel), click it for more detail.
 
 ### req.files Information
 
